@@ -355,35 +355,20 @@ SPAE MVP
    ROUTER PRINCIPAL
 ===================================================== */
 
-
 function abrirModulo(nombre){
 
-
     const workspace =
-
         document.getElementById(
-
             "workspace"
-
         );
 
-
-
     if(!workspace){
-
         return;
-
     }
-
-
-
-
 
     switch(nombre){
 
-
         case "curso":
-
 
             workspace.innerHTML =
 
@@ -399,15 +384,11 @@ function abrirModulo(nombre){
                 "Curso"
             );
 
-
         break;
 
 
 
-
-
         case "evaluacion":
-
 
             workspace.innerHTML =
 
@@ -423,15 +404,11 @@ function abrirModulo(nombre){
                 "Evaluación"
             );
 
-
         break;
 
 
 
-
-
         case "preguntas":
-
 
             workspace.innerHTML =
 
@@ -447,15 +424,11 @@ function abrirModulo(nombre){
                 "Preguntas"
             );
 
-
         break;
 
 
 
-
-
         case "blueprint":
-
 
             workspace.innerHTML =
 
@@ -471,15 +444,11 @@ function abrirModulo(nombre){
                 "Blueprint"
             );
 
-
         break;
 
 
 
-
-
         case "vistaPrevia":
-
 
             workspace.innerHTML =
 
@@ -495,15 +464,11 @@ function abrirModulo(nombre){
                 "Vista previa"
             );
 
-
         break;
 
 
 
-
-
         case "exportar":
-
 
             workspace.innerHTML =
 
@@ -519,15 +484,11 @@ function abrirModulo(nombre){
                 "Exportar"
             );
 
-
         break;
 
 
 
-
-
         case "bancoPreguntas":
-
 
             workspace.innerHTML =
 
@@ -543,16 +504,31 @@ function abrirModulo(nombre){
                 "Banco de preguntas"
             );
 
+        break;
+
+
+
+        case "importadorBanco":
+
+            workspace.innerHTML =
+
+            typeof renderImportadorBanco === "function"
+
+            ?
+
+            renderImportadorBanco()
+
+            :
+
+            moduloNoDisponible(
+                "Importador de banco"
+            );
 
         break;
 
 
 
-
-
-
         default:
-
 
             workspace.innerHTML =
 
@@ -560,22 +536,9 @@ function abrirModulo(nombre){
                 nombre
             );
 
-
-
     }
 
-
-
 }
-
-
-
-
-
-
-
-
-
 /* =====================================================
    MENSAJE MÓDULO NO DISPONIBLE
 ===================================================== */
