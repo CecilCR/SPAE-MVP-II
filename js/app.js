@@ -304,12 +304,35 @@ SPAE MVP
 
 <button onclick="abrirModulo('vistaPrevia')">
 
-5. Vista previa
+<button onclick="abrirModulo('curso')">
+
+1. Curso
 
 </button>
 
+<button onclick="abrirModulo('evaluacion')">
 
+2. Evaluación
 
+</button>
+
+<button onclick="abrirModulo('preguntas')">
+
+3. Preguntas
+
+</button>
+
+<button onclick="abrirModulo('blueprint')">
+
+4. Blueprint
+
+</button>
+
+<button onclick="abrirModulo('vistaPrevia')">
+
+5. Vista previa
+
+</button>
 
 <button onclick="abrirModulo('exportar')">
 
@@ -317,70 +340,17 @@ SPAE MVP
 
 </button>
 
-
-
-
 <button onclick="abrirModulo('bancoPreguntas')">
 
 7. Banco de preguntas
 
 </button>
 
+<button onclick="abrirModulo('importadorBanco')">
 
+8. Importar banco
 
-
-</aside>
-
-
-
-
-
-
-
-<main id="workspace">
-
-
-
-<h2>
-
-Seleccione un módulo
-
-</h2>
-
-
-
-<p>
-
-SPAE listo para iniciar.
-
-</p>
-
-
-
-</main>
-
-
-
-
-
-</div>
-
-
-
-`;
-
-
-
-}
-
-
-
-
-
-
-
-
-
+</button>
 /* =====================================================
    ROUTER PRINCIPAL
 ===================================================== */
